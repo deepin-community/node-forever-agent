@@ -1,0 +1,23 @@
+Source: node-forever-agent
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Jérémy Lal <kapouer@melix.org>
+Build-Depends: debhelper-compat (= 12)
+ , pkg-js-tools (>= 0.9.20~)
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-forever-agent
+Vcs-Git: https://salsa.debian.org/js-team/node-forever-agent.git
+Homepage: https://github.com/mikeal/forever-agent
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-forever-agent
+Architecture: all
+Depends: ${misc:Depends}
+ , nodejs
+Description: HTTP agent supporting keep-alive requests - module for Node.js
+ node-forever-agent keeps socket connections alive between keep-alive
+ requests.
+ .
+ Node.js is an event-based server-side javascript engine.
